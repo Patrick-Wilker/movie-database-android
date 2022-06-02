@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Database</string>
+    <string name="title"><![CDATA[Movie DB]]></string>
+    <string name="search_image_description">Search image</string>
+    <string name="now_playing_button">Now Playing</string>
+    <string name="coming_soon_button">Coming Soon</string>
+    <string name="image_of_a_point">Image of a point</string>
+    <string name="movie_banner">Movie banner</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="cast">Cast &amp; Crew</string>
+    <string name="photos">Photos</string>
+    <string name="view_all">View All</string>
+    <string name="show_more">Show more</string>
+    <string name="show_less">Show less</string>
+    <string name="txt_film_author">Film author</string>
+    <string name="there_is_no_internet_connection">Não há conexão com internet</string>
+    <string name="suggestion_to_connect_to_the_internet">Verifique os cabos de rede, modem e roteador</string>
+    <string name="dinosaur">Dinosaur</string>
+</resources>
