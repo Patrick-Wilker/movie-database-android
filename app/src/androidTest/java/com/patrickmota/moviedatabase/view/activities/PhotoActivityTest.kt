@@ -1,17 +1,17 @@
 package com.patrickmota.moviedatabase.view.activities
 
+import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.intent.Intents
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.patrickmota.moviedatabase.R
-import org.junit.After
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
+import org.junit.*
 
 class PhotoActivityTest {
 
@@ -31,28 +31,15 @@ class PhotoActivityTest {
     }
 
     @Test
-    fun checkIfPhotoActivityIsDisplayed(){
+    fun checkIfPhotoActivityIsDisplayed() {
         onView(withId(R.id.photo_activity))
             .check(matches(isDisplayed()))
     }
 
     @Test
     fun shouldReturnToThePreviousScreenByClickingTheBackButton() {
+        onView(withContentDescription(R.string.button_return_previous_screen)).perform(click())
 
-//        onView(withId(R.id.photo_activity))
-//            .check(matches(isDisplayed()))
-//
-//        onView(withId(android.R.id.home))
-//            .perform(click())
-
-//        Espresso.pressBack()
-//
-//        assertTrue(activityRule.scenario.state == Lifecycle.State.DESTROYED)
-
-//        ActivityScenario.launch(MovieDetailActivity::class.java)
-//
-//        onView(withId(R.id.movie_detail))
-//            .check(matches(isDisplayed()))
-
+        Assert.assertTrue(activityRule.scenario.state == Lifecycle.State.DESTROYED)
     }
 }

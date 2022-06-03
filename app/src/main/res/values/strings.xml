@@ -16,4 +16,5 @@
     <string name="there_is_no_internet_connection">Não há conexão com internet</string>
     <string name="suggestion_to_connect_to_the_internet">Verifique os cabos de rede, modem e roteador</string>
     <string name="dinosaur">Dinosaur</string>
+    <string name="button_return_previous_screen">Button to return to the previous screen</string>
 </resources>
